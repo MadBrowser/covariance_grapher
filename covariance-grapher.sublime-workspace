@@ -1,0 +1,318 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get_picture_",
+				"get_picture_url"
+			],
+			[
+				"get_",
+				"get_picture"
+			],
+			[
+				"conte",
+				"convertirMatrizAImagen"
+			],
+			[
+				"ro",
+				"rotar_90_grados"
+			],
+			[
+				"matri",
+				"matriz"
+			],
+			[
+				"co",
+				"copiaReflejoHorizontalExitosa"
+			],
+			[
+				"espejo",
+				"espejo_horizontal"
+			],
+			[
+				"cop",
+				"copiaReflejoHorizontalExitosa"
+			],
+			[
+				"copia",
+				"copiaReflejoVertical"
+			],
+			[
+				"conv",
+				"convertirMatrizAImagen"
+			],
+			[
+				"matriz",
+				"matriz"
+			],
+			[
+				"matr",
+				"matriz_reflejada"
+			],
+			[
+				"h",
+				"h2	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"con",
+				"Convert Case: Lower Case"
+			],
+			[
+				"",
+				"Convert Case: Lower Case"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/MadBrowser/Dev/covariance_grapher/covariance-matrix.py",
+		"/Users/MadBrowser/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/MadBrowser/Dev/covariance_grapher/filtering_seismograms.py",
+		"/Users/MadBrowser/Dev/covariance_grapher/progcov2.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/spf/models/Principal.py",
+		"/Users/MadBrowser/Desktop/uninstall_brew.sh",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/spf/models/Invitation.py",
+		"/Users/MadBrowser/Downloads/filtering_seismograms.py",
+		"/Users/MadBrowser/Desktop/Script Estado Plataforma.py",
+		"/Users/MadBrowser/Dropbox/U.Chile-USACH-Central/Sismos/codigo_programa/progcov2.py",
+		"/Users/MadBrowser/Desktop/GeneraSVM",
+		"/Users/MadBrowser/Dev/p_s_signal_sorter/src/svms/calculaError.m",
+		"/Users/MadBrowser/Dev/p_s_signal_sorter/src/svms/Escribe.m",
+		"/Users/MadBrowser/Dev/p_s_signal_sorter/src/svms/SVM.m",
+		"/Users/MadBrowser/Dev/p_s_signal_sorter/src/svms/valCruz.m",
+		"/Users/MadBrowser/Dev/p_s_signal_sorter/src/svms/iterSVM.m",
+		"/Users/MadBrowser/Dev/p_s_signal_sorter/src/svms/revisaDoble.m",
+		"/Users/MadBrowser/Dev/p_s_signal_sorter/src/svms/GenerarSVMs.m",
+		"/Users/MadBrowser/Dev/p_s_signal_sorter/src/svms/cambiaDoble.m",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/spf/models/Transaction.py",
+		"/Users/MadBrowser/Dropbox/U.Chile-USACH-Central/Procesamiento de Señales/Trabajo de archivos SAC con obspy.",
+		"/Users/MadBrowser/Dev/p_s_signal_sorter/src/pre_processing/GeneraIntervalos.m",
+		"/Applications/sac/bin/sacinit.sh",
+		"/Applications/sac/bin/sacinit.csh",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/notification/receivers.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/spf/models/Person.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/templates/email/activate_account.html",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/spf/views.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/server_urls.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/urls.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/templates/email/account_blocked.html",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/templates/email/account_activated.html",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/pocgateway/views.py",
+		"/Users/MadBrowser/Dropbox/U.Chile-USACH-Central/Procesamiento de Señales/Filtros.txt",
+		"/Users/MadBrowser/Desktop/C.GO01..BHE.D.2013.216.txt",
+		"/Users/MadBrowser/vagrant_getting_started/bootstrap.sh",
+		"/Users/MadBrowser/vagrant_getting_started/Vagrantfile",
+		"/Users/MadBrowser/Dropbox/Usach/Ayudantía CyS 1-2014/Laboratorios/Laboratorio 2/laboratorio2-garay-lin/laboratorio2/README.md",
+		"/Users/MadBrowser/Dev/p_s_signal_sorter/src/reduce_set/Reduce.m",
+		"/Users/MadBrowser/Dropbox/Usach/Ayudantía CyS 1-2014/Laboratorios/Laboratorio 1/Garay_Lin/laboratorio-1-cys/README.md",
+		"/Users/MadBrowser/Dev/SPF/spf_frontend/src/deprecated/BeneficiaryNotifications.mxml",
+		"/Users/MadBrowser/Dev/SPF/spf_frontend/src/AdminModule.mxml",
+		"/Users/MadBrowser/Dev/SPF/spf_frontend/src/Consts.as",
+		"/Users/MadBrowser/Dev/SPF/spf_frontend/src/AccountModule.mxml",
+		"/Users/MadBrowser/Documents/activacion-01/activacion.html",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/templates/user/activate.html",
+		"/Users/MadBrowser/Desktop/Correo de activación - auxiliar",
+		"/Users/MadBrowser/Library/Caches/Cleanup At Startup/Transmit/8526F88D-7980-4B49-9313-319B379ED1DF/index.php",
+		"/Users/MadBrowser/Desktop/Credenciales admin@spf.cl",
+		"/Users/MadBrowser/Desktop/Control 3/Control3.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/templates/principal-mobile/benefit-detail-info.html",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/templates/principal-mobile/principal-recipient-account.html",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/templates/user/login.html",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/templates/sii/fiscalizacion.html",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/templates/principal-mobile/principal-list.html",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/templates/principal-mobile/administracion.html",
+		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
+		"/Users/MadBrowser/Dev/SPF/spf_frontend/bin-debug/index.html",
+		"/Users/MadBrowser/Dev/SPF/spf_frontend/bin-release/index.html",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/templates/user/reset_password.html",
+		"/Users/MadBrowser/Dropbox/SPF/FrontEnd/Diseño/Iconos/iconic/vector/umbrella.svg",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/pocgateway/security.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/pocgateway/decorators.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/pocgateway/utils.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/pocgateway/MultiPartForm.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/local_settings.py",
+		"/Users/MadBrowser/Desktop/index.html",
+		"/Users/MadBrowser/Desktop/index2.html",
+		"/Users/MadBrowser/Dev/SPF/spf_frontend/bin-release/context.xml",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/spf/migrations/0008_deleting_benefitpayment.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/spf/migrations/0009_auto__del_benefitpayment.py",
+		"/Volumes/WININSTALL/Transacción: 804. Persona: Jorge Ferrando.",
+		"/Users/MadBrowser/Desktop/Tracto camion volkswagen 26.220 con rampla goren",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/settings.py",
+		"/Users/MadBrowser/Dev/SPF/spf_backend/srv/spf/admin.py",
+		"/Users/MadBrowser/Library/Caches/Cleanup At Startup/Transmit/5CBE5126-B012-45A7-9559-89081AB1FDAC/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"get_person_picture",
+			"volkswagen",
+			"grua",
+			"imasa",
+			"international",
+			"ford",
+			"camion",
+			"__name__"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Volkswagen",
+			"Grúa",
+			"IMASA",
+			"International",
+			"Ford",
+			"Camión"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "covariance-grapher.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 321.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
