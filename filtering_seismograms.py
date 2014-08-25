@@ -12,7 +12,7 @@ tr = st[0]
 
 # Filtering with a lowpass on a copy of the original Trace
 tr_filt = tr.copy()
-tr_filt.filter('bandpass', freqmin=1.0, freqmax=7.0, df=tr.stats.sampling_rate, corners=2, zerophase=True)
+tr_filt.filter('bandpass', freqmin=1.0, freqmax=7.0, corners=2, zerophase=True)
 
 # Now let's plot the raw and filtered data...
 t = np.arange(0, tr.stats.npts / tr.stats.sampling_rate, tr.stats.delta)
