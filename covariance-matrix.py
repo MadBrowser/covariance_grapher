@@ -35,6 +35,9 @@ for channel in channels:
     delta = channel.stats.npts - channels[0].stats.npts
     channel.data = channel.data[0:channel.stats.npts - delta]
 
+# Se reordena la lista para que los ejes queden en el orden correcto E, N, Z
+channels = sorted(channels, key=attrgetter('stats.channel'))
+
 # Cálculo de número de muestras para la ventana
 n = window * int(channels[0].stats.sampling_rate)
 
