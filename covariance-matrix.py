@@ -12,6 +12,7 @@ import numpy as np
 import sys
 
 channels = []
+data = []
 
 # Lectura de archivos.
 if len(sys.argv) == 5:
@@ -37,18 +38,19 @@ for channel in channels:
 # Cálculo de número de muestras para la ventana
 n = window * int(channels[0].stats.sampling_rate)
 
-''' TO DO: Determinar una forma para usar np.mean sin estar forzado a utilizar
-    arreglos de numpy.
-# Creación vector en donde a cada componente se le resta el promedio del canal
+# Se pasan los valores de las señales a arreglos tipo numpy
 for channel in channels:
+    data.append(np.array(channel.data))
+
+# Creación vector en donde a cada componente se le resta el promedio del canal
+for channel in data:
     new_values = []  # Crea un arreglo auxiliar
-    mean = float(np.mean(channel.data))  # Calcula el promedio del canal
+    mean = np.mean(channel.data)  # Calcula el promedio del canal
     for sample in channel:  # Para cada elemento del canal
         value = sample - mean  # Calcula su nuevo valor
         new_values.append(value)  # Y lo agrega al arreglo auxiliar
-    channel.data = new_values  # Cuando termina agrega el arreglo auxiliar
+    channel = new_values  # Cuando termina agrega el arreglo auxiliar
                                     # al arreglo con los nuevos canales.
-'''
 
 ''' TO DO: Optimizar esta función ya que muchas de las instrucciones son
     repetidas
@@ -62,9 +64,9 @@ for i in range(0, channels[0].stats.npts - window):
     aux_z = []
     # Lleno los valores de la ventana
     for j in range(0, window):
-        aux_x.append(channels[0].data[i + j])
-        aux_y.append(channels[1].data[i + j])
-        aux_z.append(channels[2].data[i + j])
+        aux_x.append(data[0][i + j])
+        aux_y.append(data[1][i + j])
+        aux_z.append(data[2][i + j])
     # Calculo los elementos de la fila X
     m11 = float(np.dot(aux_x, aux_x) / n)
     m12 = float(np.dot(aux_x, aux_y) / n)
