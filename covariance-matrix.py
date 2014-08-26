@@ -18,7 +18,7 @@ mean_values = []
 if len(sys.argv) == 5:
     for i in range(1, 4):
         channels.append(read(sys.argv[i])[0])  # Único canal del archivo
-    window = sys.argv[4]
+    window = int(sys.argv[4])
 else:
     print 'Número de parámetros de entrada incorrecto'
 
