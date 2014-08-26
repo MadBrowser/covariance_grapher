@@ -2,9 +2,10 @@
 # coding=utf-8
 ''' Este código está pensado para leer archivos SAC que contengan sólo 1 canal.
     Como parámetro de entrada se debe entregar la ruta completa a los archivos
-    SAC. En este caso para la matriz de covarianza se necesitan las 3
-    componentes N-E-Z por lo que se entiende serán 3 rutas como parámetros de
-    entrada. Se asume también que todos los canales tienen el mismo SR
+    SAC y el tamaño de la ventana. En este caso para la matriz de covarianza se
+    necesitan las 3 componentes N-E-Z por lo que se entiende serán 3 rutas como
+    parámetros de entrada. Se asume también que todos los canales tienen el
+    mismo SR.
 '''
 from obspy.core import read
 from operator import attrgetter
