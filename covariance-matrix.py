@@ -7,6 +7,7 @@
     entrada. Se asume también que todos los canales tienen el mismo SR
 '''
 from obspy.core import read
+from operator import attrgetter
 import numpy as np
 import sys
 
@@ -21,6 +22,17 @@ if len(sys.argv) == 5:
 else:
     print 'Número de parámetros de entrada incorrecto'
 
+# Corrección del tiempo en los canales
+channels = sorted(channels, key=attrgetter('stats.starttime'), reverse=True)
+for channel in channels:
+    delta = (channels[0].stats.starttime - channel.stats.starttime)
+    delta_samples = int(delta * channel.stats.sampling_rate)
+    channel.data = channel.data[delta_samples:channel.stats.npts]
+
+''' TODO: Resolver como corregir los arreglos cuando tienen distintos números
+    de elementos.
+'''
+
 # Cálculo de número de muestras para la ventana
 n = float(window) * channels[0].stats.sampling_rate
 
@@ -33,13 +45,6 @@ for channel in channels:
         new_values.append(value)  # Y lo agrega al arreglo auxiliar
     mean_values.append(new_values)  # Cuando termina agrega el arreglo auxiliar
                                     # al arreglo con los nuevos canales.
-
-''' TODO: Corrección del tiempo en que comienza cada canal para que comiencen
-    al mismo tiempo.
-'''
-''' TODO: Resolver como corregir los arreglos cuando tienen distintos números
-    de elementos.
-'''
 # Cálculo de los componenetes de la matriz.
 x = [0, 0]
 y = [0, 0]
