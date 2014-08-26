@@ -52,3 +52,38 @@ x = [0, 0]
 y = [0, 0]
 z = [0, 0]
 covariance_matrix = np.matrix([x, y, z])
+
+''' TO DO: Optimizar esta función ya que muchas de las instrucciones son
+    repetidas
+'''
+# Creación de la matriz de covarianza
+for i in range(0, channels[0].stats.npts - window):
+    # Agrego los elementos de cada canal correspondientes a la ventana
+    # a un vector auxiliar.
+    aux_x = []
+    aux_y = []
+    aux_z = []
+    # Lleno los valores de la ventana
+    for j in range(0, window):
+        aux_x.append(channels[0].data[i + j])
+        aux_y.append(channels[1].data[i + j])
+        aux_z.append(channels[2].data[i + j])
+    # Calculo los elementos de la fila X
+    m11 = float(np.dot(aux_x, aux_x) / n)
+    m12 = float(np.dot(aux_x, aux_y) / n)
+    m13 = float(np.dot(aux_x, aux_z) / n)
+    x = [m11, m12, m13]
+
+    # Calculo los elementos de la fila y
+    m21 = float(np.dot(aux_y, aux_x) / n)
+    m22 = float(np.dot(aux_y, aux_y) / n)
+    m23 = float(np.dot(aux_y, aux_z) / n)
+    y = [m21, m22, m23]
+
+    # Calculo los elementos de la fila z
+    m31 = float(np.dot(aux_z, aux_x) / n)
+    m32 = float(np.dot(aux_z, aux_y) / n)
+    m33 = float(np.dot(aux_z, aux_z) / n)
+    z = [m31, m32, m33]
+    covariance_matrix = np.matrix([x, y, z])
+    print covariance_matrix
