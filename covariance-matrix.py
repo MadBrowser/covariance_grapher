@@ -35,6 +35,7 @@ for channel in channels:
 
 # Cálculo de número de muestras para la ventana
 n = float(window) * channels[0].stats.sampling_rate
+n = window * int(channels[0].stats.sampling_rate)
 
 # Creación vector en donde a cada componente se le resta el promedio del canal
 for channel in channels:
