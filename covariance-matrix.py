@@ -46,6 +46,11 @@ n = window * int(channels[0].stats.sampling_rate)
 for channel in channels:
     data.append(np.array(channel.data))
 
+''' TO DO: Integrar el cálculo de los elementos menos el promedio del canal
+    dentro del cálculo de la matriz, para que el programa no demore tanto
+    en entregar los resultados, ya que actualmente debe recorrer los 3 canales
+    (300k datos) lo cual toma mucho tiempo
+'''
 # Creación vector en donde a cada componente se le resta el promedio del canal
 for channel in data:
     new_values = []  # Crea un arreglo auxiliar
