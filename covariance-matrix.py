@@ -29,12 +29,13 @@ for channel in channels:
     delta_samples = int(delta * channel.stats.sampling_rate)
     channel.data = channel.data[delta_samples:channel.stats.npts]
 
-''' TODO: Resolver como corregir los arreglos cuando tienen distintos números
-    de elementos.
-'''
+# Corrección del número de elementos en cada canal
+channels = sorted(channels, key=attrgetter('stats.npts'))
+for channel in channels:
+    delta = channel.stats.npts - channels[0].stats.npts
+    channel.data = channel.data[0:channel.stats.npts - delta]
 
 # Cálculo de número de muestras para la ventana
-n = float(window) * channels[0].stats.sampling_rate
 n = window * int(channels[0].stats.sampling_rate)
 
 # Creación vector en donde a cada componente se le resta el promedio del canal
