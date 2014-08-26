@@ -12,7 +12,6 @@ import numpy as np
 import sys
 
 channels = []
-mean_values = []
 
 # Lectura de archivos.
 if len(sys.argv) == 5:
@@ -38,20 +37,18 @@ for channel in channels:
 # Cálculo de número de muestras para la ventana
 n = window * int(channels[0].stats.sampling_rate)
 
+''' TO DO: Determinar una forma para usar np.mean sin estar forzado a utilizar
+    arreglos de numpy.
 # Creación vector en donde a cada componente se le resta el promedio del canal
 for channel in channels:
     new_values = []  # Crea un arreglo auxiliar
-    mean = np.mean(channel.data)  # Calcula el promedio del canal
+    mean = float(np.mean(channel.data))  # Calcula el promedio del canal
     for sample in channel:  # Para cada elemento del canal
         value = sample - mean  # Calcula su nuevo valor
         new_values.append(value)  # Y lo agrega al arreglo auxiliar
-    mean_values.append(new_values)  # Cuando termina agrega el arreglo auxiliar
+    channel.data = new_values  # Cuando termina agrega el arreglo auxiliar
                                     # al arreglo con los nuevos canales.
-# Cálculo de los componenetes de la matriz.
-x = [0, 0]
-y = [0, 0]
-z = [0, 0]
-covariance_matrix = np.matrix([x, y, z])
+'''
 
 ''' TO DO: Optimizar esta función ya que muchas de las instrucciones son
     repetidas
